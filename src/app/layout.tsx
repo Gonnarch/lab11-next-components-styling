@@ -1,0 +1,1 @@
+import './globals.css'; export const metadata={title:'Nexo | Laboratorio 11'}; export default function Layout({children}:Readonly<{children:React.ReactNode}>){return <html lang="es"><body>{children}</body></html>}

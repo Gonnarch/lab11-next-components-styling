@@ -1,0 +1,2 @@
+import styles from './Input.module.css';
+export default function Input({label,value,onChange,error,type='text'}:{label:string;value:string;onChange:(v:string)=>void;error?:string;type?:string}){return <div className={styles.wrapper}><input aria-label={label} className={styles.input} placeholder=" " type={type} value={value} onChange={e=>onChange(e.target.value)}/><label className={styles.label}>{label}</label>{error&&<p className={styles.error}>{error}</p>}</div>}
